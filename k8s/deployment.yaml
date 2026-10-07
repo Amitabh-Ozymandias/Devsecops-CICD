@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: session17-python
-          image: mineshshaw/devsecops-cicd:latest
-          imagePullPolicy: Always           # pull from Docker Hub
+          image: session17-python:latest
+          imagePullPolicy: IfNotPresent           # use local kind image if loaded, otherwise pull
           ports:
             - containerPort: 5001
